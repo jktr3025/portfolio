@@ -1,0 +1,74 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+body{
+    background-color: #ebe3eb;
+    /* background-image: url("img/bg.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;       
+    font-family: 'Pretendard-Regular';
+}
+.world{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    background-image: url("../img/mario-cart-bg.png");
+}
+.among{
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+.text{
+    position: absolute;
+    left: 1200px;
+    bottom: 300px;
+    /* border: 1px solid red; */
+    width: 60px;
+}
+.text p{
+    display: inline-block;
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+.arrow{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 60px;
+    top: 0;
+    /* border: 1px solid rebeccapurple; */
+    animation: opa 1s infinite ease-in-out;
+}
+@keyframes opa{
+    0%{}
+    100%{
+        opacity: 0;
+        left: 120px;
+    }
+}

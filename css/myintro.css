@@ -16,12 +16,15 @@ a{
 }
 body{
     background-color: #ebe3eb;
-    /* background-image: url("img/bg.png"); */
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-repeat: repeat;
+    background-size: 30%;
     background-position: center;
     background-attachment: fixed;       
     font-family: 'Pretendard-Regular';
+    /* background-image: url("../flowers-8175044_1280.png"); */
+    
 }
 .world{
     width: 200px;
@@ -31,7 +34,7 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-image: url("../img/mario-cart-bg.png");
 }
 .among{

@@ -47,7 +47,6 @@ $(function(){
                 keyboardScrolling:true,
                 ScrollingSpeed:4000,
                 menu: ".menu",
-                
                 slidesNavigation:true  , //슬라이드의 버튼 여부
                 slidesNavPosition:"bottom", //슬라이드 버튼의 위치
                 anchors: ["section1", "section2", "section3", "section4", "section5", "section6"],

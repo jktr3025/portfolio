@@ -14,6 +14,7 @@ $(function(){
                 typingBool = true;
                 var time = setInterval( typing, 100) //반복 동작
             }//if
+
             function typing(){
                 $(".typing ul li").removeClass("on");
                 $(".typing ul li").eq(liIdx).addClass("on");
@@ -59,7 +60,8 @@ $(function(){
             var typingIdx = 0; //타이핑 될 글자의 인덱스
             var liIdx = 0; // li의 인덱스 
             var liLength = $(".motto >ul >li").length;  // li 갯수
-            
+             $(".typing ul li").text("");
+             $(".typing ul li").removeClass("on");
             //타이핑 될 텍스트 가져오기
             var typingTxt = $(".motto > ul >li").eq(liIdx).text();
             console.log(typingTxt);
@@ -67,7 +69,7 @@ $(function(){
             console.log(typingTxt);
             if(typingBool == false){
                 typingBool = true;
-                var time = setInterval( typing, 100) //반복 동작
+                 time = setInterval( typing, 100) //반복 동작
             }//if
             function typing(){
                 $(".typing ul li").removeClass("on");
@@ -87,13 +89,13 @@ $(function(){
                         //다음문장 타이핑 전 1초 쉬기
                         clearInterval(time);
                         setTimeout(function(){
-                            time = setInterval( typing, 100)
+                        var    time = setInterval( typing, 100)
                         }, 1000)
                     }//작은 if
                 }//큰if
             }//typing
                     }else{
-                        $(".typing ul li").html("");
+                        $(".typing ul li").text("");
                     } //if
                 } //afterLoad
             },

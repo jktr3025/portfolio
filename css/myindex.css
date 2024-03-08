@@ -126,19 +126,15 @@ body{
     margin-bottom: 10px;
 }
 .motto{
-    width: 280px;
     /* border: 1px solid royalblue; */
-    padding: 10px 0;
     display: none;
 }
-.motto ul li{
-    height: 25px;
-    line-height: 25px;
-}
+
 .typing{
     text-align: center;
 }
 .typing ul li{
+    width: 100%;
     height: 25px;
     line-height: 25px;
 }
@@ -225,7 +221,7 @@ body{
 }
 .e_txt{
     font-size: 30px;
-    padding: 50px 0 50px 200px ;
+    padding: 50px 0 50px 140px ;
     line-height: 1.5;
 }
 .finish1{
@@ -263,8 +259,65 @@ body{
     bottom: -20px;
     transform: rotate(10deg);
 }
-
-
+.finish4{
+    background-image: url("../img/trip1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+.finish4 img{
+    width: 70%;
+    position: absolute;
+    right: -170px;
+    bottom: -80px;
+    /* border: 1px solid yellow; */
+}
+.finish5{
+    background-image: url("../img/go2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+.finish5 img{
+    width: 350px;
+    position: absolute;
+    left: -100px;
+    bottom: 50px;
+}
 
 /* coding */
 .coding{}
+.c_finish{
+    background-image: url("../img/monitor.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+.c_finish .view{
+    border: 1px solid tomato;
+    width: 424px;
+    height: 267px;
+    position: absolute;
+    top: 107px;
+    left: 86px;
+}
+.c_tool{
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    /* border: 1px solid yellowgreen; */
+    height: 50px;
+     /* width: 300px; */
+}
+.c_tool img{
+    /* border: 1px solid red; */
+    width: 50px;
+    margin-right: 10px;
+}
+.c_finish span{
+    color: #fff;
+    font-size: 20px;
+}

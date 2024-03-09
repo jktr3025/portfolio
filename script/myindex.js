@@ -47,9 +47,10 @@ $(function(){
                 scrollHorizontally: true,
                 keyboardScrolling:true,
                 ScrollingSpeed:4000,
+                // navigationTooltips:["","", "","","","",""] ,
                 menu: ".menu",
                 slidesNavigation:true  , //슬라이드의 버튼 여부
-                slidesNavPosition:"bottom", //슬라이드 버튼의 위치
+                // slidesNavPosition:"bottom", //슬라이드 버튼의 위치
                 anchors: ["section1", "section2", "section3", "section4", "section5", "section6"],
                 afterLoad: function (index) {
                     var current = index.index;
@@ -121,8 +122,28 @@ $(function(){
             //로고 클릭 시 바 리셋
             $(".logo").click(function(){
                 $("#indicator").css({opacity:0})
-            })//logo").click
+            }),//logo").click
 
+
+
+                        //coding hover
+                        $(".c_finish a").hover(function(){
+                            $(".c_finish1 img").stop().animate({top:"-485%"},4000)
+                            $(".c_finish2 img").stop().animate({top:"-213%"},2000)
+                            $(".c_finish3 img").stop().animate({top:"-17%"},500)
+                            $(".c_finish4 img").stop().animate({top:"-374%"},4000)
+                            $(".c_finish5 img").stop().animate({top:"-114%"},1000)
+                            $(".c_finish6 img").stop().animate({top:"-86%"},1000)
+                            $(".c_finish7 img").stop().animate({top:"-374%"},4000)
+                        }, function(){
+                            $(".c_finish1 img").stop().animate({top:"0"},2000)
+                            $(".c_finish2 img").stop().animate({top:"0"},2000)
+                            $(".c_finish3 img").stop().animate({top:"0"},500)
+                            $(".c_finish4 img").stop().animate({top:"0"},4000)
+                            $(".c_finish5 img").stop().animate({top:"0"},1000)
+                            $(".c_finish6 img").stop().animate({top:"0"},1000)
+                            $(".c_finish7 img").stop().animate({top:"0"},4000)
+                        })
 
 
             )//fullpage

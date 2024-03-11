@@ -104,7 +104,7 @@ body {
 .section_inner {
     width: 90%;
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 20px;
 }
 
@@ -130,7 +130,7 @@ body {
 
 .img_box {
     width: 300px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 20px 0;
     display: flex;
     flex-direction: column;
@@ -154,8 +154,7 @@ body {
     text-align: center;
 }
 
-.typing ul li {
-    width: 100%;
+.typing ul li {    
     height: 25px;
     line-height: 25px;
 }
@@ -223,20 +222,41 @@ body {
 .my {
     display: flex;
     justify-content: center;
+    /* background-color: wheat; */
 }
+
+.d_my{
+    width: 1400px;
+    margin: 0 auto;
+    height: 500px;
+    display: flex;
+    justify-content: space-between ;
+    /* background-color: wheat; */
+    /* position: absolute; */
+}
+
+
 
 .finish {
     width: 600px;
     height: 500px;
-    border: 1px solid blue;
-
+    /* border: 1px solid blue; */
+    /* background-color: aquamarine; */
+    
 }
-
+.finish1{}
+.finish2{
+    width: 300px;
+}
+.finish img{
+    width: 100%;
+}
 .explanation {
     width: 800px;
     height: 500px;
-    border: 1px solid red;
-    display: flex;
+    /* border: 1px solid red; */
+    /* background-color: olive;
+    display: flex; */
     flex-direction: column;
     justify-content: center;
 }
@@ -279,12 +299,12 @@ body {
 }
 
 .c_finish .view {
-    border: 1px solid tomato;
-    width: 424px;
+    /* border: 1px solid tomato; */
+    width: 425px;
     height: 267px;
     position: absolute;
     top: 107px;
-    left: 86px;
+    left: 87px;
     overflow: hidden;
 }
 
@@ -334,53 +354,65 @@ body {
 .fp-arrow.fp-prev{
     border-width: 0 !important;
     border-color:transparent !important;
-    width: 50px;
-    height: 50px;
-    background-color: aqua !important;
-    background-image: url("../img/arrow_here2.png") !important;
+    width: 80px;
+    height: 80px;
+    /* background-color: aqua !important; */
     background-size: contain !important;
+    background-image: url("../img/arrow_4.png");
     position: absolute;
-    left: 46px;
+    left: 146px;
+    transition: all 0.3ss;
+    animation: arrow_move_prev 0.5s infinite;
+    /* border: 1px solid royalblue !important; */
+}
+@keyframes arrow_move_prev{
+    0%{}
+    50%{
+        left: 136px;
+    }
+    100%{
+        left: 146px;
+    }
 }
 .fp-arrow.fp-next{
     /* border-width: 38.5px 0px 38.5px 34px;
     border-color: transparent transparent transparent rgb(255, 255, 255); */
     border-width: 0 !important;
     border-color:transparent !important;
-    width: 50px;
-    height: 50px;
-    background-color: aqua !important;
-    background-image: url("../img/arrow_here2.png") !important;
+    width: 80px;
+    height:80px;
+    /* border: 1px solid royalblue !important; */
+    /* background-color: #9e73a1 !important; */
+    background-image: url("../img/arrow_4.png");
     background-size: contain !important;
     position: absolute;
-    right: 46px;
+    right: 146px;
+    transform: rotate(180deg);
+    transition: all 0.3ss;
+    animation: arrow_move_next 0.5s infinite;
+}
+@keyframes arrow_move_next{
+    0%{}
+    50%{
+        right: 136px;
+    }
+    100%{
+        right: 146px;
+    }
 }
 .fp-slidesNav{
-    border: 1px solid red !important;
+    /* border: 1px solid red !important; */
     position: absolute !important;
-    bottom: 100px !important;
+    bottom: 145px !important;
     left: 50% !important;
     width: 200px;
-    transform: translateX(-50%);
+    transform: translateX(-50%);;
 }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-    border-radius: 50%;
-    position: absolute;
-    z-index: 1;
-    height: 4px;
-    width: 4px;
-    border: 0;
     background: #9e73a1 !important;
-    left: 50%;
-    top: 50%;
-    margin: -2px 0 0 -2px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
 }
-#fp-nav ul li a.active span,
+/* #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span{
@@ -388,4 +420,4 @@ body {
     width: 12px;
     margin: -6px 0 0 -6px;
     border-radius: 100%;
- }
+ } */

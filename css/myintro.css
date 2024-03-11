@@ -48,9 +48,11 @@ body{
 .text{
     position: absolute;
     left: 1200px;
-    bottom: 300px;
+    /* bottom: 300px; */
+    bottom: 326px;
     /* border: 1px solid red; */
-    width: 60px;
+    /* width: 60px; */
+    
 }
 .text p{
     display: inline-block;
@@ -73,5 +75,52 @@ body{
     100%{
         opacity: 0;
         left: 120px;
+    }
+}
+.gauge_box1{
+    /* border: 1px solid darkred; */
+    /* padding: 10px; */
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 615px;
+    transform: translate(-50%, -50%);
+
+}
+.progressbar{
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    /* background-color: #ccc; */
+    background-color: #ebe3eb;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    z-index: 100;
+}
+.progress::after{
+    content: "%";
+}
+.progressbar1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: lightblue; */
+    background-color: #9e73a1;
+    width: 0px;
+    height: 30px;
+    animation: progress1 5s ease-in-out forwards;
+}
+@keyframes progress1{
+    0%{}
+    100%{
+    width:100%;
     }
 }

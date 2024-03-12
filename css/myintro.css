@@ -48,8 +48,10 @@ body{
 .text{
     position: absolute;
     left: 1200px;
+    /* left: 1050px; */
     /* bottom: 300px; */
-    bottom: 326px;
+    /* bottom: 326px; */
+    top: 603px;
     /* border: 1px solid red; */
     /* width: 60px; */
     
@@ -96,11 +98,12 @@ body{
     margin: 20px 0;
     position: relative;
     overflow: hidden;
+    /* border: 1px solid red; */
 }
 
 .progress{
     position: absolute;
-    top: 3px;
+    top: 5px;
     right: 5px;
     z-index: 100;
 }

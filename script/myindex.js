@@ -54,7 +54,12 @@ $(function(){
                 }//typingIdx < typingTxt.length
             }//typing
 
-
+            $(".design span").click(function(){
+                $(".design span").removeClass("on");
+                $(this).addClass("on");
+                $(".design  .d_my").removeClass("on");
+                $(this).next().addClass("on");
+            })
             
     if($(window).width() > 390){
         $('#fullpage').fullpage({
@@ -174,5 +179,8 @@ $(function(){
 
                 })//fullpage
         }//if390보다 클 때
+
+
+        
 
 })//jquery

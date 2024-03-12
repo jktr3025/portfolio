@@ -213,10 +213,12 @@ body {
 }
 
 /* design */
-.design {}
+.design {
+}
 
 .design .section_inner {
     height: 600px;
+    position: relative;
 }
 
 .my {
@@ -231,26 +233,107 @@ body {
     height: 500px;
     display: flex;
     justify-content: space-between ;
-    /* background-color: wheat; */
-    /* position: absolute; */
+}
+.design  .d_my{
+    position: absolute;
+    left: 160px;
+    top:75px;
+    background-color: #DECFDF;
+    display: none;
+}
+.design  .d_my.on{
+    display: flex;
+}
+.design span{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    z-index: 10;
+}
+.design span.on{
+    border: 1px solid #9e73a1;
 }
 
-
+.design span:nth-of-type(1){
+    left: 200px;
+}
+.design span:nth-of-type(2){
+    left: 250px;
+}
+.design span:nth-of-type(3){
+    left: 300px;
+}
+.design span:nth-of-type(4){
+    left: 350px;
+}
+.design span:nth-of-type(5){
+    left: 400px;
+}
 
 .finish {
     width: 600px;
     height: 500px;
     /* border: 1px solid blue; */
     /* background-color: aquamarine; */
-    
-}
-.finish1{}
-.finish2{
-    width: 300px;
+    position: relative;
+    background-repeat: no-repeat;
 }
 .finish img{
-    width: 100%;
+    /* border: 1px solid red; */
 }
+.finish1{
+    background-image: url("../img/taeyeon.png");
+    background-position: right center;
+    background-size: cover;
+}
+.finish1 img{
+    display: inline-block;
+    position: absolute;
+    right: -190px;
+    top: 10px;
+    width: 550px !important;
+}
+.finish2{}
+.finish2 img{
+    width: 800px;
+    
+}
+.finish3{
+    background-size: contain;
+    background-image: url("../img/package2.png");
+    background-position: left center;
+}   
+.finish3 img{
+    width: 65%;
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 320px;
+    top: 40px;
+}
+.finish4{
+    background-size: contain;
+    background-image: url("../img/trip1.png");
+    background-position: left center;
+}   
+.finish4 img{
+    width: 70%;
+    /* border: 1px solid red; */
+    position: absolute;
+    right: -200px;
+    bottom: -40px;
+}
+.finish5{
+    background-size: contain;
+    background-image: url("../img/go2.jpg");
+    background-position: center center;
+}   
+
 .explanation {
     width: 800px;
     height: 500px;

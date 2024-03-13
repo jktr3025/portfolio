@@ -61,7 +61,7 @@ $(function(){
                 $(this).next().addClass("on");
             })
             
-    if($(window).width() > 390){
+    // if($(window).width() > 390){
         $('#fullpage').fullpage({
                 autoScrolling: true,
                 scrollHorizontally: true,
@@ -178,7 +178,7 @@ $(function(){
                     }}
 
                 })//fullpage
-        }//if390보다 클 때
+        // }//if390보다 클 때
 
 
         

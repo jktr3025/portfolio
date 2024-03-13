@@ -36,13 +36,14 @@ body{
     transform: translate(-50%, -50%);
     /* border: 1px solid black; */
     background-image: url("../img/mario-cart-bg.png");
+    /* background-image: url("../img/background.png"); */
 }
 .among{
     position: absolute;
     width: 60px;
     height: 80px;
     left: 50%;
-    bottom: 20px;
+    bottom: 12px;
     transform: translateX(-50%);
 }
 .text{
